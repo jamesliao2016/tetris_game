@@ -97,7 +97,9 @@ class BoardData(object):
             self.currentY = -minY
             self.currentDirection = 0
             self.currentShape = self.nextShape
-            self.nextShape = Shape(random.randint(1, 7))
+            self.nextShape = Shape(random.randint(6, 7))
+            # self.nextShape = Shape(random.randint(2, 7))
+            # self.nextShape = Shape(7)
             result = True
         else:
             self.currentShape = Shape()
